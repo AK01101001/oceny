@@ -38,6 +38,9 @@ public class Obszar {
     public String getOwnership() {
         return "controled by: "+ ownership.toString() ;
     }
+    public Faction getFaction() {
+        return ownership ;
+    }
 
     public int getImage() {
         return image;

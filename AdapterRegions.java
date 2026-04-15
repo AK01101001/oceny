@@ -42,7 +42,24 @@ public class AdapterRegions extends ArrayAdapter<Obszar> {
         urbanized.setText(obszar.isUrbanized());
         tdAmmount.setText(obszar.getTDAmmount());
         faction.setText(obszar.getOwnership());
-        switch ()
+        switch (obszar.getFaction())
+        {
+            case Huanglong:
+                convertView.setBackgroundResource(R.color.lime);
+                break;
+            case OrderOfTheDeep:
+                convertView.setBackgroundResource(R.color.yellow);
+                break;
+            case BlackShores:
+                convertView.setBackgroundResource(R.color.blue);
+                break;
+            case Fractsidus:
+                convertView.setBackgroundResource(R.color.red);
+                break;
+            case SpacetrekCollective:
+                convertView.setBackgroundResource(R.color.green);
+                break;
+        }
         return convertView;
     }
 }

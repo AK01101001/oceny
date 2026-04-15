@@ -31,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
         });
         obszary = new ArrayList<>();
         obszary.add(new Obszar("raguna",R.drawable.raguna,true,0, Obszar.Faction.OrderOfTheDeep));
+        obszary.add(new Obszar("eidoscope",R.drawable.eidoscope,false,0, Obszar.Faction.BlackShores));
+        obszary.add(new Obszar("rearguardbase",R.drawable.rearguardbase,true,0, Obszar.Faction.Huanglong));
+        obszary.add(new Obszar("tethyshub",R.drawable.tethyshub,true,0, Obszar.Faction.BlackShores));
+        obszary.add(new Obszar("fabricatoriumStoreModule",R.drawable.fabricatoriumstoremodule,false,0, Obszar.Faction.Fractsidus));
 
         AdapterRegions adapterRegions = new AdapterRegions(this,obszary);
         binding.lista.setAdapter(adapterRegions);
